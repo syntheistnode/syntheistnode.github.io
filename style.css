@@ -16,8 +16,12 @@ body {
     margin-bottom: 25px;
 }
 
+.donation-selector {
+    margin-bottom: 25px;
+}
+
 .donate-button {
-    margin-top: 25px;
     display: block;
     margin: auto;
 }
+
