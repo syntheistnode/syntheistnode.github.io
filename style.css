@@ -15,3 +15,7 @@ body {
 .logo {
     margin-bottom: 25px;
 }
+
+.donate-button {
+    margin: auto;
+}
