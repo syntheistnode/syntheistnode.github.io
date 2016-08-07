@@ -17,5 +17,6 @@ body {
 }
 
 .donate-button {
+    display: block;
     margin: auto;
 }
