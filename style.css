@@ -32,7 +32,7 @@ progress[value] {
   text-indent: .5em;
   width: 15em;
   height: 1.8em;
-  border: none;
+  border: 1px solid black;
   width: 300px;
   height: 20px;
 }
@@ -40,31 +40,31 @@ progress[value] {
 /* Background Colors  */
 progress,                          /* Firefox  */
 progress[role][aria-valuenow] {    /* Polyfill */
-   background: #000066 !important; /* !important is needed by the polyfill */
+   background: white !important; /* !important is needed by the polyfill */
 }
  
 /* Chrome */
 progress::-webkit-progress-bar {
-    background: #000066;
+    background: white;
 }
  
 /* Foreground Colors   */
 /* IE10 */
 progress {
-    color: Cyan;
+    color: black;
 }
  
 /* Firefox */
 progress::-moz-progress-bar { 
-    background: Cyan;   
+    background: black;   
 }
  
 /* Chrome */
 progress::-webkit-progress-value {
-    background: Cyan;
+    background: black;
 }
  
 /* Polyfill */
 progress[aria-valuenow]:before  {
-    background: Cyan;
+    background: black;
 }
