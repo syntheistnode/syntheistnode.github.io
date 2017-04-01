@@ -12,37 +12,20 @@
     <div class="logo">
       <a href="https://docs.google.com/spreadsheets/d/1eKSC9FWqq4ZXldiIXxLojfefm-7ZCOxr1_o6vAxaj1A/edit?usp=sharing"><img src="http://static1.squarespace.com/static/54105706e4b07bc380c2febe/t/5551b1c0e4b008b6a4518465/1431417282149/syntheism_logotype.png" height="300"></img></a>
     </div>
-    
-    <div><p>
-      Current monthly donations: 5200 SEK 
-      <br>
-      Monthly donation goal: 12 000 SEK
-    </p></div>
-    
-    <div>
-      Current progress toward a self-sustaining Node
-      <br>
-      <progress max="100" value="37"></progress>
-    </div>
 
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="J6M6NW7VNA6KC">
-    <table class="donation-selector">
-    <tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select name="os0">
-    	<option value="Recommended: 100 SEK">Recommended: 100 SEK : 100,00 SEK - per month</option>
-    	<option value="150 SEK">150 SEK : 150,00 SEK - per month</option>
-    	<option value="200 SEK">200 SEK : 200,00 SEK - per month</option>
-    	<option value="300 SEK">300 SEK : 300,00 SEK - per month</option>
-    	<option value="50 SEK">50 SEK : 50,00 SEK - per month</option>
-    </select> </td></tr>
-    </table>
-    <input type="hidden" name="currency_code" value="SEK">
-    <input type="image" class="donate-button" src="http://syntheistnode.se/button.png" border="0" name="submit" alt="Donate to the Node">
-    <img alt="" border="0" src="https://www.paypalobjects.com/sv_SE/i/scr/pixel.gif" width="1" height="1">
+    <form action="/your-server-side-code" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_ubM1VEDYUky9Lqg5PPyRw2T6"
+        data-amount="999"
+        data-name="Synteistiska"
+        data-description="Widget"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto"
+        data-zip-code="true"
+        data-currency="eur">
+      </script>
     </form>
 
-
-    
   </body>
 </html>
